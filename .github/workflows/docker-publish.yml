@@ -28,7 +28,7 @@ jobs:
           context: ./ArgoGlobal/src  # Path to the Dockerfile and build context
           push: true
           tags: |
-            itayhazan/itayhub:Test11.1
+            itayhazan/itayhub:Test11.2
 
       - name: Logout from Docker Hub
         run: docker logout
