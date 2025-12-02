@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: app-node
+  name: itayhub
   labels:
-    app: app-node
+    app: itayhub
 spec:
   containers:
     - name: app-node
@@ -14,11 +14,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-node
+  name: itayhub
 spec:
   type: LoadBalancer
   selector:
-    app: app-node
+    app: itayhub
   ports:
     - name: http
       port: 80
